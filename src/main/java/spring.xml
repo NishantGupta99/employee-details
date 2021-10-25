@@ -9,7 +9,8 @@
 
 
 	<bean id="employee" class="com.democlass.EmployeeBean">
-	<property name="departmentBean" ref="department"></property>
+	<constructor-arg ref="department"></constructor-arg>
+	<!-- <property name="departmentBean" ref="department"></property> -->
 	</bean>
 
 	<bean id="department" class="com.democlass.DepartmentBean"></bean>
